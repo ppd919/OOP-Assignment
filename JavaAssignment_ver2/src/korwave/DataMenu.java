@@ -1,8 +1,9 @@
 package korwave;
 
+// 데이터 메뉴 클래스 - PrintMenu 인터페이스 상속
 public class DataMenu implements PrintMenu {
-	public static int OPTION_SIZE = 6;
-	int backNumber = OPTION_SIZE;
+	public static int OPTION_SIZE = 6; // 옵션 개수
+	int backNumber = OPTION_SIZE; // 뒤로가기 번호 = 옵션 개수
 	@Override
 	public void printTitle() {
 		
@@ -28,7 +29,6 @@ public class DataMenu implements PrintMenu {
 
 	@Override
 	public void printError() {
-		// TODO Auto-generated method stub
 		System.out.println("[!] 잘못된 값을 입력하였습니다. 1~6 사이의 값을 입력하세요.");
 	}
 

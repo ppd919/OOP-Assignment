@@ -1,8 +1,9 @@
 package korwave;
 
+// 국가 선택 메뉴 클래스 - PrintMenu 인터페이스 상속
 public class CountryMenu implements PrintMenu{
-	public static int OPTION_SIZE = CountryName.values().length + 1;
-	public static int BACK_NUMBER = OPTION_SIZE;
+	public static int OPTION_SIZE = CountryName.values().length + 1; // 옵션 개수
+	int backNumber = OPTION_SIZE; // 뒤로가기 번호 = 옵션 개수
 	
 	@Override
 	public void printTitle() {
@@ -17,6 +18,7 @@ public class CountryMenu implements PrintMenu{
 
 	@Override
 	public void printOptions() {
+		// 추후에 국가를 추가하더라도 열거체만 수정하면 되도록 옵션 출력
 		for (int i = 0; i < OPTION_SIZE - 1; i++) {
 			System.out.printf("%d. %s\n", i+1, CountryName.values()[i]);
 		}

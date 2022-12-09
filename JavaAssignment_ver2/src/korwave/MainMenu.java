@@ -1,8 +1,9 @@
 package korwave;
 
+// 메인 메뉴 클래스 - PrintMenu 인터페이스 상속
 public class MainMenu implements PrintMenu{
-	int optionSize = 2;
-	int exitNumber = optionSize;
+	int optionSize = 2; // 옵션 개수
+	int exitNumber = optionSize; // 프로그램 종료 번호 = 옵션 개수
 		
 	@Override
 	public void printTitle() {

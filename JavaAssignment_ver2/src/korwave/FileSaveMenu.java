@@ -1,7 +1,9 @@
 package korwave;
 
 public class FileSaveMenu implements PrintMenu {
-
+	int optionSize = 2;
+	int backNumber = optionSize;
+	
 	@Override
 	public void printTitle() {
 		System.out.println("--------------------");
