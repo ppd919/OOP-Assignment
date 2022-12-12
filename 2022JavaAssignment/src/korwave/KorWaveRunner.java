@@ -20,6 +20,9 @@ public class KorWaveRunner {
 
 	public static void main(String[] args) {
 		
+		// 번호를 입력하면서 원하는 한류의 현황을 알아보는 프로그램입니다.
+		
+		
 		// 외부 txt 파일 내용을 저장하는 2차원 배열
 		// 국가의 개수와 데이터의 개수만큼 생성
 		String[][] fileMultiArray = new String[CountryMenu.OPTION_SIZE - 1][DataMenu.OPTION_SIZE - 1];

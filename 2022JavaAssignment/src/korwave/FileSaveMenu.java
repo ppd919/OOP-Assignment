@@ -1,8 +1,9 @@
 package korwave;
 
+// 파일 저장 메뉴 클래스 - PrintMenu 인터페이스 상속
 public class FileSaveMenu implements PrintMenu {
-	int optionSize = 2;
-	int backNumber = optionSize;
+	int optionSize = 2; // 옵션 개수
+	int backNumber = optionSize; // 뒤로가기 번호 = 옵션 개수
 	
 	@Override
 	public void printTitle() {
@@ -23,7 +24,6 @@ public class FileSaveMenu implements PrintMenu {
 
 	@Override
 	public void printExit() {
-		// TODO Auto-generated method stub
 		
 	}
 
